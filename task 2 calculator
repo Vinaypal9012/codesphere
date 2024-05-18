@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{   
+    int a,b,c;
+    char op;
+    
+    cout<<"enter first number"<<endl;
+    cin>>a;
+    cout<<"enter second number"<<endl;
+    cin>>b;
+    
+    cout<<"enter an operation"<<endl;
+    cin>>op;
+    
+    switch(op){
+        case '+':
+        c=a+b;
+        cout<<"sum"<<"="<<c<<endl;
+        break;
+        
+        case '-':
+        c=a-b;
+        cout<<"sub"<<"="<<c<<endl;
+        break;
+        
+        case '*':
+        c=a*b;
+        cout<<"mul"<<"="<<c<<endl;
+        break;
+        
+        case '/':
+        c=a/b;
+        cout<<"div"<<"="<<c<<endl;
+        break;
+        
+        default:
+        cout<<"invalid choice"<<endl;
+    }
+
+    return 0;
+}
